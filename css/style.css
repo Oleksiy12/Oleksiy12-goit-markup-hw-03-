@@ -18,6 +18,17 @@ font-family: 'Roboto', sans-serif;
 background-color: var(--sac-basic-color);
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+ul,ol{
+    margin: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+
 /*Універсальні класси*/
 /*hover focus*/
 button:hover{
@@ -40,13 +51,7 @@ font-size: 14px;
 line-height: 1.14px;
 letter-spacing: 0.02em;
 }
-/*Параметри для заголовків 2рівня */
-.title-second{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-letter-spacing: 0.03em;
-}
+
 /*Курсор*/
 .cursor{
 cursor: pointer;
@@ -69,28 +74,82 @@ text-decoration: none;
 list-style: none;
 }
 
+.container{
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+}
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
 
 /*навігація шапки*/
+
+.head-web{
+padding-top: 24px;
+padding-bottom: 25px;
+}
 .nav-first{
 font-weight:500 ;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--basic-color);
+display: flex;
+align-items: center;
 }
-.telmail {
+
+.tel {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--subtitle-color);
 }
+.mail{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--subtitle-color)
+}
+
 .logo-leters{
 color: var(--basic-color);
 }
 
+.header-box{
+display: flex;
+align-items: center;
+}
+.navigation-mark{
+display: flex;
+gap: 50px;
+}
+.contacts {
+display: flex;
+justify-items: space-between;
+align-items: center;
+gap: 50px;
+}
+.telmail-box {
+margin-left: auto;
+}
+
+.logo {
+margin-right: 93px;
+}
 
 /*Hero*/
+
+.first {
+
+
+
+}
 .hero-sect{
 background-color: var(--back-color);
 font-weight: 900;
@@ -99,6 +158,12 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--sac-basic-color);
+padding-bottom: 200px;
+padding-top: 200px;
+display: flex;
+text-align: center;
+
+
 }
 .title-hero{
 font-weight: 900;
@@ -108,6 +173,13 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--sac-basic-color);
+margin-bottom: 30px;
+text-transform: uppercase;
+max-width: 696px;
+margin-left: auto;
+margin-right: auto;
+
+
 }
 .hero-button{ 
 background-color: var(--back-batt-color);
@@ -116,10 +188,21 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
-color: var(--sac-basic-color);
+color: var(--sac-basic-color); 
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+min-width: 216px;
+height: 50px;
+text-align: center;
+display: inline-block;
 }
 
 /*Наші особливості*/
+.features-head{
+    display: flex;
+    gap: 30px;
+}
+
 .features{
 font-weight: 700;
 font-size: 14px;
@@ -136,19 +219,44 @@ color: var(--subtitle-color);
 }
 /*не існуюючий заголовок*/
 .defunct{
-font-size: 0;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
 }
 
-/*Чим ми займаємося
---
-*/
-
+/*Чим ми займаємося*/
+.title-second{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+}
+.work {
+    display: flex;
+    gap: 30px;
+}
 /*Наша команда*/
+.staff{
+    display: flex;
+    gap: 30px;
+}
+.title-second{
+margin-bottom: 50px;
+}
 .staff-paragraph{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
+margin-bottom: 10px;
+text-align: center;
 }
 .staff-profession{
 font-weight: 400;
@@ -156,18 +264,31 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--subtitle-color);
+text-align: center;
 }
 .team{
 background-color: var(--back-section-color);
 }
 .team-list{
 background-color: var(--sac-basic-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
+.cards-staff{
+padding-top: 30px;
+}
+
 
 /*Підвал сторінки*/
 
+.nav-address{
+padding-top: 20px;
+}
+
 .basement-hero{
 background-color: var(--back-color);
+padding-top: 60px;
+padding-bottom: 60px;
 }
 .mail-tell-foot{
 font-weight: 400;

@@ -17,10 +17,22 @@ color: var(--basic-color);
 background-color: var(--sac-basic-color);
 }
 
+h1,h2,h3,h4,h5,h6 {
+margin: 0;
+}
+ul,ol{
+margin: 0;
+padding-left: 0;
+}
+
+img{
+    display: block;
+}
+
 /*Універсальні класси*/
 /*hover focus*/
 a:hover{
-color: var(--another-color);
+color: var(--another-color);  
 }
 a:focus{
 color: var(--another-color);
@@ -59,6 +71,12 @@ list-style: none;
 background-color: var(--sac-basic-color);
 }
 
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    }
 
 /*навігація шапки*/
 .nav-first{
@@ -102,6 +120,7 @@ color: var(--sac-basic-color);
 }
 .list-button{
 list-style: none;
+margin-bottom: 34px;
 }
 
 /*Головний текст*/
@@ -112,6 +131,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--basic-color); 
+margin-bottom: 4px;
 }
 .paragraph-hero{
 font-weight: 400;

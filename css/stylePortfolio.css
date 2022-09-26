@@ -7,6 +7,8 @@
 --back-color: #2f303a;
 --uknown-color: #ffffff99;
 --back-batt-color: #F5F4FA;
+--border-header-color: #ECECEC;
+--border-page-color: #EEEEEE;
 }
 
 
@@ -15,6 +17,10 @@ body{
 font-family: 'Roboto', sans-serif;
 color: var(--basic-color);
 background-color: var(--sac-basic-color);
+}
+
+a {
+text-decoration: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -26,7 +32,7 @@ padding-left: 0;
 }
 
 img{
-    display: block;
+display: block;
 }
 
 /*Універсальні класси*/
@@ -63,6 +69,8 @@ letter-spacing: 0.03em;
 color: var(--another-color);
 text-decoration: none;
 }
+
+
 /*всі маркери*/
 .points{
 list-style: none;
@@ -72,29 +80,75 @@ background-color: var(--sac-basic-color);
 }
 
 .container{
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     }
 
 /*навігація шапки*/
+
+
+.first-box{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.head-web{
+padding-top: 24px;
+padding-bottom: 25px;
+border: 1px solid var(--border-header-color);
+}
+
 .nav-first{
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--basic-color);
+display: flex;
+
 }
-.telmail {
+
+.tel {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--subtitle-color);
 }
-.logo-leters{
+
+.mail {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--subtitle-color);
+}
+
+.navigation-mark {
+display: flex;
+justify-content: space-between ;
+gap: 50px;
+align-items: center;
+}
+
+.logo{
+margin-right: 93px;
+}
+
+.logo-letters {
 color: var(--basic-color);
+}
+
+.contacts {
+display: flex;
+justify-items: space-between;
+align-items: center;
+gap: 50px;
+    
 }
 
 /*Кнопки*/
@@ -109,6 +163,10 @@ letter-spacing: 0.03em;
 cursor: pointer;
 color: var(--basic-color);
 background-color: var(--back-batt-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+border: currentColor;
+padding: 5.78px 25px;
 }
 button:hover{
 background-color: var(--another-color);
@@ -118,8 +176,13 @@ button:focus{
 background-color: var(--another-color);
 color: var(--sac-basic-color);
 }
-.list-button{
+.list-button{ 
 list-style: none;
+margin-bottom: 34px;
+display: flex;
+justify-content: center;
+gap: 8px;
+padding-top: 94px;
 margin-bottom: 34px;
 }
 
@@ -131,7 +194,6 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--basic-color); 
-margin-bottom: 4px;
 }
 .paragraph-hero{
 font-weight: 400;
@@ -139,15 +201,34 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--subtitle-color);
+
 }
-a   {
-text-decoration: none;
+.hero-link{
+display: flex;
+flex-wrap: wrap;
+padding-bottom: 94px;
+gap: 30px ;
 }
+
+.image-link{
+display: inline-block;
+}
+.border-page{
+border: 1px solid var(--border-page-color);
+border-top: 0;
+padding: 20px 24px;
+}
+.link-text{
+flex-basis: calc((100% - 60px) / 3);
+}
+
 
 /*Підвал сторінки*/
 
 .basement-hero{
 background-color: var(--back-color);
+padding-top: 60px;
+padding-bottom: 60px;
 }
 .mail-tell-foot{
 font-weight: 400;
@@ -169,5 +250,12 @@ font-style: normal;
 }
 .two-logo-letters{
 color: var(--sac-basic-color);
+}
+.log-foot{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.foot-list{
+    margin-bottom: 9px;
 }
     

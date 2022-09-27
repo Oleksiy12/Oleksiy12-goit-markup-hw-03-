@@ -1,3 +1,9 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, 
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, 
+td { margin: 0; padding: 0; border: 0; outline: 0; text-decoration: none; }
+
+
+
 /*Кольори сторінки*/
 :root{
 --basic-color: #212121;
@@ -19,16 +25,6 @@ font-family: 'Roboto', sans-serif;
 background-color: var(--sac-basic-color);
 }
 
-h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-}
-ul,ol{
-    margin: 0;
-    padding-left: 0;
-}
-img{
-    display: block;
-}
 
 /*Універсальні класси*/
 /*hover focus*/
@@ -136,16 +132,11 @@ display: flex;
 justify-items: space-between;
 align-items: center;
 gap: 50px;
-}
-.telmail-box {
 margin-left: auto;
 }
 
-.logo {
+.first-logo {
 margin-right: 93px;
-}
-.telmail-box {
-margin-left: auto;
 }
 
 /*Hero*/
@@ -192,7 +183,7 @@ letter-spacing: 0.06em;
 color: var(--sac-basic-color); 
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-border: color var(--another-color);
+border: none;
 min-width: 216px;
 height: 50px;
 text-align: center;
@@ -212,6 +203,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+margin-bottom: 10px;
 }
 .paragraph-features{
 font-weight: 400;
@@ -242,27 +234,33 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
+text-align: center;
 }
 .work {
     display: flex;
     gap: 30px;
+    padding-bottom: 94px;
 }
 /*Наша команда*/
 .staff{
-    display: flex;
-    gap: 30px;
+display: flex;
+gap: 30px;
 }
+
 .title-second{
 margin-bottom: 50px;
 }
+
 .staff-paragraph{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
-margin-bottom: 10px;
 text-align: center;
+margin-top: 30px;
+margin-bottom: 10px;
 }
+
 .staff-profession{
 font-weight: 400;
 font-size: 16px;
@@ -270,22 +268,27 @@ line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--subtitle-color);
 text-align: center;
+margin-bottom: 30px;
 }
+
 .team{
 background-color: var(--back-section-color);
 }
+
 .team-list{
 background-color: var(--sac-basic-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+
 }
-.cards-staff{
-padding-top: 30px;
-}
+
 
 
 /*Підвал сторінки*/
 
+.foot-list{
+margin-bottom: 9px;
+}
 
 .log-foot{
 display: inline-block;

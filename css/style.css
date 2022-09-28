@@ -212,6 +212,11 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--subtitle-color);
 }
+
+.features-list{
+    flex-basis: calc((100%-270px) /4);
+}
+
 /*не існуюючий заголовок*/
 
 .defunct{
@@ -229,6 +234,10 @@ margin: -1px;
 
 /*Чим ми займаємося*/
 
+.work-sect{
+    padding-bottom: 94px;
+}
+
 .title-second{
 font-weight: 700;
 font-size: 36px;
@@ -239,7 +248,7 @@ text-align: center;
 .work {
     display: flex;
     gap: 30px;
-    padding-bottom: 94px;
+
 }
 /*Наша команда*/
 .staff{

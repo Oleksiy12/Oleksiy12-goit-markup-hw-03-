@@ -214,7 +214,7 @@ color: var(--subtitle-color);
 }
 
 .features-list{
-    flex-basis: calc((100%-270px) /4);
+    flex-basis: calc((100%-90px) /4);
 }
 
 /*не існуюючий заголовок*/
